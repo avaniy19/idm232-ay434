@@ -17,7 +17,7 @@ $main_navigation = [
 ];
 
 ?>
-<header class="px-2 py-4 bg-gray-800">
+<header class="px-2 py-4 bg-stone-900">
   <div class="max-w-7xl flex justify-between mx-auto">
     <a href="<?php echo site_url(); ?>">
       <img src="<?php echo site_url(); ?>/dist/images/logo.png" alt="logo">
