@@ -26,7 +26,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <script src="https://cdn.tiny.cloud/1/7rpnj47it93x8jhvzo8vbgdulo0j4qdj5xdmud6xc46gy8fb/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
   <!-- Including TailwindCss Library -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <!-- <script src="tailwind.config.js"></script> -->
 
   <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.ico">
