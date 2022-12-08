@@ -20,7 +20,7 @@
         </div>
 
         <div class="px-5 py-2">
-          <a href="#" class="text-base text-gray-400 hover:text-gray-900">admin</a>
+          <a href=" <?php echo site_url(); ?>/admin/recipes/index.php" class="text-base text-gray-400 hover:text-gray-900">admin</a>
         </div>
       </nav>
       <p class="mt-8 text-center text-base text-gray-300">&copy;
@@ -31,6 +31,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.tiny.cloud/1/9jqy2gw4ig8mdo8k817dbzbfwj54llufua2gzl30qad17tlw/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
   <script src="<?php echo site_url(); ?>/dist/scripts/main.js"></script>
   </body>

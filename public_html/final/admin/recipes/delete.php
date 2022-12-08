@@ -6,12 +6,12 @@ if (isset($_GET['id'])) {
     die('ID is needed in URL');
 }
 
-$result = delete_user_by_id($id);
+$result = delete_recipe_by_id($id);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/admin/users');
+    redirect_to('/admin/recipes');
 } else {
-    $error_message = 'Could Not Delete User: ' . mysqli_error($db_connection);
-    redirect_to('/admin/users?error=' . $error_message);
+    $error_message = 'Could Not Delete Recipe: ' . mysqli_error($db_connection);
+    redirect_to('/admin/recipe?error=' . $error_message);
 }
