@@ -1,4 +1,8 @@
-html,
+*{
+  border: 1px solid red;
+}
+
+/* html,
 body,
 div,
 span,
@@ -85,8 +89,9 @@ video {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
-  /* font-family: 'Numans', sans; */
+  font-family: 'Numans', sans;
 }
+
 article,
 aside,
 details,
@@ -103,10 +108,12 @@ section {
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
@@ -120,4 +127,4 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+} */

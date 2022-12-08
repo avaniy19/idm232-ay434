@@ -62,17 +62,21 @@ if ($result->num_rows > 0) {
               </div>
               <br>
 
-              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div class=" mx-3 md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">ingredients</label>
-                <textarea class="js-tinymce" name="ingredients"></textarea>
-                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="ingredients" value="<?php echo $recipes['ingredients'] ?>"> -->
+                <textarea class="js-tinymce" name="ingredients">
+                <?php echo $recipes['ingredients']; ?>
+                </textarea>
+                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="ingredients" value="?php echo $recipes['ingredients'] ?"> -->
               </div>
               <br>
 
-              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div class=" mx-3 md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">instructions</label>
-                <textarea class="js-tinymce" name="instructions"></textarea>
-                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="instructions" value="<?php echo $recipes['instructions'] ?>"> -->
+                <textarea class="js-tinymce" name="instructions">
+                <?php echo $recipes['instructions']; ?>
+                </textarea>
+                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="instructions" value="?php echo $recipes['instructions'] ?"> -->
               </div>
               <br>
 
