@@ -42,12 +42,12 @@ while ($recipes = mysqli_fetch_array($result)) {
 
                     <div class=''>
                         <div class=''>
-                            <h5> Ingredients: </h5>
-                            <p class=''>{$recipes['ingredients']}</p>
+                            <h5> Ingredients </h5>
+                            <div>{$recipes['ingredients']}</div>
                         </div>
                         <div class=''>
                             <h5> Instructions: </h5>
-                            <p class=''>{$recipes['instructions']}</p>
+                            <div>{$recipes['instructions']}</div>
                         </div>
                     </div> 
                 </div>

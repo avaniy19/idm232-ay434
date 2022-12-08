@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file will hold all the functions for your project.
  */
@@ -28,7 +29,10 @@ function site_url()
  */
 function redirect_to($path)
 {
-    header('Location: ' . site_url() . $path);
+    $full_url = site_url() . $path;
+    // Bluehost doesn't like when you use header() to redirect so we'll use JS instead
+    // header('Location: ' . $full_url);
+    echo "<script>window.location = '$full_url';</script>";
     exit;
 }
 

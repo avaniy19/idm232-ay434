@@ -26,7 +26,7 @@ $result = mysqli_query($db_connection, $query);
 
 
 
-              <br>
+              <!-- <br> -->
               <div class="mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">recipe title</label>
                 <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="recipe_title">
