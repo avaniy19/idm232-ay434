@@ -23,16 +23,17 @@ if (!isset($result)) {
 $site_url = site_url();
 while ($recipes = mysqli_fetch_array($result)) {
     echo "
-        <div class=''>
-            <div class=''>
-                <div class=''>
-                    <div>
-                        <h2 class=''>{$recipes['recipe_title']}</h2>
+    <br>
+        <div class='justify-center flex max-h-screen'>
+            <div class='min-h-screen overflow-y-aut'>
+                <div class='space-x-2 bg-slate-50 px-3 py-2'>
+                    
+                        <h2 class='text-xl text-fuchsia-900'>{$recipes['recipe_title']}</h2>
                         <div> 
                             <p class=''> Servings: {$recipes['servings']}</p>
                             <p class=''> Total Time (prep and cook): {$recipes['total_time']}</p>
                         </div>
-                    </div>
+                    
                     <img class='' width='500px' height='500px' src='{$site_url}/{$recipes['image_path']}' alt=''>
                     <div>
                         <p class=''>{$recipes['description']}</p>

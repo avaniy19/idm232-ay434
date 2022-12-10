@@ -3,8 +3,8 @@
 if (!isset($page_title)) {
   $page_title = '🚨 Missing Title 🚨';
 }
-$site_title = 'JAWN Clips';
-$document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
+$site_title = 'onlyPans';
+$document_title = $page_title . ' | ' . $site_title;
 
 ?>
 <!DOCTYPE html>
@@ -23,10 +23,10 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
 
   <!-- Including TinyMCE Library -->
-  <script src="https://cdn.tiny.cloud/1/7rpnj47it93x8jhvzo8vbgdulo0j4qdj5xdmud6xc46gy8fb/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/7dw1ocbxe9ymk7mm80dlqz7nfi3xapkp9f4von4jx082v125/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
   <!-- Including TailwindCss Library -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- <script src="tailwind.config.js"></script> -->
 
   <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.ico">

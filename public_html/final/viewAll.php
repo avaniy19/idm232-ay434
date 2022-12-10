@@ -17,7 +17,8 @@ $result = mysqli_query($db_connection, $query);
 <div class="">
     <div class="">
         <div class="">
-            <h1 class="">All Recipes</h1>
+            <!-- <h1 class="">All Recipes</h1> -->
+            <br>
         </div>
     </div>
 </div>

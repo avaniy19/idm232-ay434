@@ -29,13 +29,13 @@
 
 
 
-    <nav class="text-white flex items-center">
+    <nav class="font-bold text-lime-100 flex items-center tracking-wider	">
 
       <div class="nav">
         <!-- <ul id="navWidth"> -->
-        <a href="<?php echo site_url(); ?>/about.php">About</a>
-        <a href="<?php echo site_url(); ?>/viewAll.php">Recipes</a>
-        <a href="<?php echo site_url(); ?>/contact.php">Contact</a>
+        <!-- <a href="<?php echo site_url(); ?>/about.php">About</a> -->
+        <a href="<?php echo site_url(); ?>/viewAll.php">view all recipes</a>
+        <!-- <a href="<?php echo site_url(); ?>/contact.php">Contact</a> -->
         <!-- </ul> -->
       </div>
       <?php

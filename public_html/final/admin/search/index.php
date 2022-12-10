@@ -57,15 +57,16 @@ if ($results->num_rows > 0) {
     if ($recipes_results) {
       while ($recipes_results = mysqli_fetch_assoc($results)) {
         // echo '<div class="flex flex-row justify-center items-center">';
-        echo " <div class='flex flex-row justify-center items-center'>
+        echo " 
         <a href='{$site_url}/recipeDetail.php?id={$recipes_results['id']}' class='' >
-            <div class=''>
+            <div class='mx-auto block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-stone-900 dark:bg-stone-900 dark:border-stone-900 dark:hover:bg-stone-900'>
+            <div= ''>
             <img class='' width='100px' height='100px' src='{$site_url}/{$recipes_results['image_path']}' alt=''>
                 <div class=''>
-                    <p class=''>{$recipes_results['recipe_title']}</p>
-                    <p class=''>{$recipes_results['description']}</p>
+                    <p class='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{$recipes_results['recipe_title']}</p>
+                    <p class='font-normal text-gray-700 dark:text-gray-400'>{$recipes_results['description']}</p>
                 </div> 
-
+                </div> 
             </div>
         </a></div>
     ";

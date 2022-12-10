@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-red-400">edit an existing recipe</h1>
+        <h1 class="text-xl font-semibold text-fuchsia-900">edit an existing recipe</h1>
       </div>
     </div>
     <div class="mt-8 flex flex-col">
@@ -35,30 +35,30 @@ if ($result->num_rows > 0) {
 
               <div class="mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">recipe title</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="recipe_title" value="<?php echo $recipes['recipe_title'] ?>">
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-fuchsia-900" type="text" name="recipe_title" value="<?php echo $recipes['recipe_title'] ?>">
               </div>
               <br>
               <div class="mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">image</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="image_path" value="<?php echo $recipes['image_path'] ?>">
+                <label for="">image image (provide path to file destination)</label>
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-fuchsia-900" type="text" name="image_path" value="<?php echo $recipes['image_path'] ?>">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">description</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="description" value="<?php echo $recipes['description'] ?>">
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-fuchsia-900" type="text" name="description" value="<?php echo $recipes['description'] ?>">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">servings (#)</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="servings" value="<?php echo $recipes['servings'] ?>">
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-fuchsia-900" type="text" name="servings" value="<?php echo $recipes['servings'] ?>">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">total time</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="total_time" value="<?php echo $recipes['total_time'] ?>">
+                <label for="">total time (in hours and minutes)</label>
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-fuchsia-900" type="text" name="total_time" value="<?php echo $recipes['total_time'] ?>">
               </div>
               <br>
 
@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
               </div>
               <br>
 
-              <input class=" m-6 nline-flex items-center justify-center rounded-md border border-transparent bg-red-400 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto cursor-pointer" type="submit" value="save edits">
+              <input class=" m-6 nline-flex items-center justify-center rounded-md border border-transparent bg-fuchsia-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:fuchsia-900 focus:outline-none focus:ring-2 focus:ring-fuchsia-900 focus:ring-offset-2 sm:w-auto cursor-pointer" type="submit" value="save edits">
               <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
             </form>
           </div>

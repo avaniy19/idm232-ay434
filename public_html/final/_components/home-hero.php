@@ -3,7 +3,7 @@
     <h1 class="font-bold text-stone-900 text-6xl">
       welcome to <span class="text-fuchsia-900">onlypans.com</span>
     </h1>
-    <p class="mx-auto mt-3 max-w-md text-base text-gray-400 max-w-3xl text-xl">
+    <p class="mx-auto mt-3 text-gray-400 max-w-3xl text-xl">
       the hottest new hub for finding easy one-pan recipes &#128293;</p>
     <br>
 
@@ -13,7 +13,7 @@
 
         <div>
 
-          <input class="searchText" type="text" placeholder="search..." name="search">
+          <input class="searchText" type="text" placeholder=" search..." name="search">
 
           <button class="searchButtonSec">
             <!-- <iconify-icon icon="arcticons:xiaoyuan-search" style="color: black; weight: bold" width="45" height="auto" type="submit" class="searchIcon"></iconify-icon> -->
