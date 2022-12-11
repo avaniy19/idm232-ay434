@@ -24,31 +24,38 @@ $site_url = site_url();
 while ($recipes = mysqli_fetch_array($result)) {
     echo "
     <br>
-        <div class='justify-center flex max-h-screen'>
+        <div class='justify-center flex max-h-screen mb-5'>
             <div class='min-h-screen overflow-y-aut'>
-                <div class='space-x-2 bg-slate-50 px-3 py-2'>
+                <div class='justify-center rounded-lg space-x-2 bg-lime-50 max-w-4xl p-10'>
                     
-                        <h2 class='text-xl text-fuchsia-900'>{$recipes['recipe_title']}</h2>
+                        <h2 class='text-4xl font-bold text-center text-stone-900'>{$recipes['recipe_title']}</h2>
                         <div> 
-                            <p class=''> Servings: {$recipes['servings']}</p>
-                            <p class=''> Total Time (prep and cook): {$recipes['total_time']}</p>
+                            <p class='tracking-wide text-md text-center text-gray-700'> servings: {$recipes['servings']} | total time: {$recipes['total_time']}</p>
                         </div>
-                    
-                    <img class='' width='500px' height='500px' src='{$site_url}/{$recipes['image_path']}' alt=''>
-                    <div>
-                        <p class=''>{$recipes['description']}</p>
+                    <div class='justify-center -my-20'>
+                    <img class='mx-auto rounded-lg justify-center rotate-90 max-w-lg' src='{$site_url}/{$recipes['image_path']}' alt=''>
                     </div>
+                    <div class=''>
+                        <p class=' text-gray-700 text-center'>{$recipes['description']}</p>
+                    </div>
+                    <br>
 
-                    <hr class='hr_30'>
+                    <hr class='mx-auto my-2 h-px bg-gray-200 border-0 dark:bg-gray-700'>
+
+                    <br>
 
                     <div class=''>
                         <div class=''>
-                            <h5> Ingredients </h5>
-                            <div>{$recipes['ingredients']}</div>
+                            <h5 class='font-bold text-md pb-5'> Ingredients: </h5>
+                            <div class='pl-10'>{$recipes['ingredients']}</div>
                         </div>
+
+                        <hr class='mx-auto my-2 h-px bg-gray-200 border-0 dark:bg-gray-700'>
+<br>
+
                         <div class=''>
-                            <h5> Instructions: </h5>
-                            <div>{$recipes['instructions']}</div>
+                            <h5 class='font-bold text-md pb-5'> Instructions: </h5>
+                            <div class='pl-10'>{$recipes['instructions']}</div>
                         </div>
                     </div> 
                 </div>
@@ -57,7 +64,3 @@ while ($recipes = mysqli_fetch_array($result)) {
         ";
 }
 ?>
-<!-- </div>
-          </div> -->
-
-<?php include_once __DIR__ . '/_components/footer.php';

@@ -25,22 +25,42 @@ if ($results->num_rows > 0) {
 }
 
 ?>
-
-<div class="mx-auto my-16 max-w-7xl px-4">
+<br>
+<br>
+<div class="  mx-auto max-w-7xl px-4">
   <div class="px-4 sm:px-6 lg:px-8">
     <?php include __DIR__ . '/../../_components/navigation-admin.php'; ?>
-    <div class="sm:flex sm:items-center">
-      <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Search Results</h1>
-        <form action="<?php echo site_url(); ?>/admin/search" method="GET">
-          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search" value="<?php echo $search; ?>">
-          <button type="submit">Search</button>
+    <div class="text-center sm:flex sm:items-center mx-auto">
+      <div class="sm:flex-auto mx-auto">
+        <h1 class="text-4xl font-bold text-center text-stone-900">Search Results</h1>
+        <br>
+        <form class="mx-auto" action="<?php echo site_url(); ?>/admin/search" method="GET">
+          <input class="
+          mx-auto
+          form-control
+        block
+        w-full
+        max-w-md
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-fuchsia-900
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-fuchsia-900 focus:bg-white focus:border-fuchsia-900 focus:outline-none" type=" text" name="search" id="search" placeholder=" search again..." value="<?php echo $search; ?>">
+          <!-- <button type="submit">Search</button> -->
         </form>
-        <h2>You searched for "<?php echo $search; ?>"</h2>
+        <br>
+        <h2 class="tracking-wide text-md text-center text-gray-700">you searched for "<?php echo $search; ?>"</h2>
         <?php
         // If no results, echo no results
         if (!$recipes_results) {
-          echo '<p>No results found</p>';
+          echo '<p class="tracking-wide text-md text-center text-gray-500">no results found :(</p>';
         }
         ?>
         <?php
@@ -52,6 +72,9 @@ if ($results->num_rows > 0) {
 
     </div>
 
+    <br>
+    <br>
+
     <?php
     $site_url = site_url();
     if ($recipes_results) {
@@ -61,14 +84,15 @@ if ($results->num_rows > 0) {
         <a href='{$site_url}/recipeDetail.php?id={$recipes_results['id']}' class='' >
             <div class='mx-auto block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-stone-900 dark:bg-stone-900 dark:border-stone-900 dark:hover:bg-stone-900'>
             <div= ''>
-            <img class='' width='100px' height='100px' src='{$site_url}/{$recipes_results['image_path']}' alt=''>
+            <img class='mx-auto max-w-full h-auto rounded-lg rotate-90 -my-8' width='200px' src='{$site_url}/{$recipes_results['image_path']}' alt=''>
                 <div class=''>
-                    <p class='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{$recipes_results['recipe_title']}</p>
+                    <p class='mt-2 mb-2 text-2xl font-bold text-gray-900 dark:text-lime-100 tracking-wide'>{$recipes_results['recipe_title']}</p>
                     <p class='font-normal text-gray-700 dark:text-gray-400'>{$recipes_results['description']}</p>
                 </div> 
                 </div> 
             </div>
         </a></div>
+        <br>
     ";
         // echo '</div>';
       }

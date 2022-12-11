@@ -1,7 +1,7 @@
 <?php
 // if $page_title variable doesn't exist, create a default one
 if (!isset($page_title)) {
-  $page_title = '🚨 Missing Title 🚨';
+  $page_title = 'onlyPans';
 }
 $site_title = 'onlyPans';
 $document_title = $page_title . ' | ' . $site_title;

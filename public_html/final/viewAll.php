@@ -16,10 +16,15 @@ $result = mysqli_query($db_connection, $query);
 
 <div class="">
     <div class="">
-        <div class="">
-            <!-- <h1 class="">All Recipes</h1> -->
-            <br>
-        </div>
+        <br>
+        <br>
+        <h2 class='text-4xl font-bold text-center text-stone-900'>All Recipes</h2>
+        <br>
+
+        <p class='tracking-wide text-md text-center text-gray-700'> get ready to wok and roll with meals so easy to make, <br> you could do it with one hand and your eyes closed!
+            &#128293;</p>
+        <br>
+        <br>
     </div>
 </div>
 

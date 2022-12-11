@@ -1,32 +1,42 @@
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="text-center">
     <h1 class="font-bold text-stone-900 text-6xl">
-      welcome to <span class="text-fuchsia-900">onlypans.com</span>
+      <span class="text-fuchsia-900">onlyPans.com</span>
     </h1>
     <p class="mx-auto mt-3 text-gray-400 max-w-3xl text-xl">
-      the hottest new hub for finding easy one-pan recipes &#128293;</p>
+      so glad you came! welcome to the hottest new hub for finding quick one-pan recipes &#128293;
+    </p>
     <br>
 
-    <div class="searchContainer">
+    <div class="searchContainer max-w-md mx-auto rounded-lg">
 
-      <form class="searchBox" action="<?php echo site_url(); ?>/admin/search" method="GET">
+      <form class="searchBox rounded-lg" action="<?php echo site_url(); ?>/admin/search" method="GET">
 
-        <div>
-
-          <input class="searchText" type="text" placeholder=" search..." name="search">
-
-          <button class="searchButtonSec">
-            <!-- <iconify-icon icon="arcticons:xiaoyuan-search" style="color: black; weight: bold" width="45" height="auto" type="submit" class="searchIcon"></iconify-icon> -->
-          </button>
-
-        </div>
-
-      </form>
-
+        <input class="searchText form-control
+        block
+        w-full
+        max-w-md
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-fuchsia-900
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-fuchsia-900 focus:bg-white focus:border-fuchsia-900 focus:outline-none" type="text" placeholder=" search..." name="search">
+        <button class="searchButtonSec">
+        </button>
     </div>
 
+    </form>
 
-    <!-- <a href="#" class="my-6 inline-flex items-center rounded border border-transparent bg-pink-700 px-4 py-2 text-xs font-lg text-white shadow-sm hover:bg-pink-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Book
-      an Appointment</a> -->
   </div>
+
+
+
+</div>
 </div>
