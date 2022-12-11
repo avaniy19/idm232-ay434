@@ -2,7 +2,6 @@
 include_once __DIR__ . '/../../app.php';
 $page_title = 'search';
 include_once __DIR__ . '/../../_components/header.php';
-$services = get_services();
 
 // Check if search exist in query
 if (isset($_GET['search'])) {
